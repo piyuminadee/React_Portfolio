@@ -1,4 +1,9 @@
-//pass the relative path into dynamic url
 export const getImageUrl = (path) => {
-    return new URL(`assets/${path}`, import.meta.url).href;
-}
+    if (!path) {
+        console.error("Path is undefined or empty");
+        return ""; // Return an empty string or a default image URL
+    }
+    const url = `/assests/${path}`;
+    console.log("Generated URL:", url); // Log the generated URL to verify it
+    return url;
+};
