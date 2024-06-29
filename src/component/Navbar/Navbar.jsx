@@ -3,9 +3,11 @@ import styles from "./Navbar.module.css";
 import {getImageUrl} from '../../utils';
 
 export const Navbar = () => {
+  const [menuOpen, setMenuOpen] = React.useState(false);
 
-  const imageUrl = getImageUrl("nav/menuIcon.png");
-    console.log("Image URL:", imageUrl);
+  const openImgUrl = getImageUrl("nav/menuIcon.png");
+  const closeImgUrl = getImageUrl("nav/closeIcon.png");
+    console.log("Image URL:", openImgUrl);
 
   return (
     <nav className={styles.navbar}>
@@ -13,9 +15,16 @@ export const Navbar = () => {
     
       <div className={styles.menu}>
 
-      <img className={styles.menuBtn} src={imageUrl} alt="Menu Icon"/>
+      <img className={styles.menuBtn} src={
+        menuOpen 
+        ? closeImgUrl
+        :openImgUrl
+        } alt="Menu Icon"
+          onClick={()=>setMenuOpen(!menuOpen)}
+        />
 
-      <ul className={styles.menuItems}>
+      <ul className={`${styles.menuItems} ${menuOpen && styles.menuOpen}` }
+      onClick={()=> setMenuOpen(false)}>
         <li><a href='#about'>About</a></li>
         <li><a href='#experiences'>Experiences</a></li>
         <li><a href='#projects'>Projects</a></li>
