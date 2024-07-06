@@ -11,7 +11,7 @@ export const Hero = () => {
         <div className={styles.content}>
         <h1 className={styles.title}>Hi, I'm Nadeesha</h1>
             <p className={styles.description}>I am a java developer with no experiences. undergraduate University of Kelaniya</p>
-            <a className={styles.contactBtn} type='button' href='mailto:piyuminadeesha.22@mail.com'></a>
+            <a className={styles.contactBtn} type='button' href='mailto:piyuminadeesha.22@mail.com'>Contact Me</a>
         </div>
         <img className={styles.heroImg} src={heroImgUrl}/>
         <div className={styles.topBlur}/>

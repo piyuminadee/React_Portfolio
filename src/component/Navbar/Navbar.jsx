@@ -21,7 +21,7 @@ export const Navbar = () => {
         :openImgUrl
         } alt="Menu Icon"
           onClick={()=>setMenuOpen(!menuOpen)}
-        />
+      />
 
       <ul className={`${styles.menuItems} ${menuOpen && styles.menuOpen}` }
       onClick={()=> setMenuOpen(false)}>
