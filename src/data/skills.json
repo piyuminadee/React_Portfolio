@@ -16,8 +16,8 @@
     "imageSrc": "skills/node.png"
   },
   {
-    "title": "Express",
-    "imageSrc": "skills/graphql.png"
+    "title": "Django",
+    "imageSrc": "skills/dj.png"
   },
   {
     "title": "MongoDB",
@@ -44,7 +44,7 @@
     "imageSrc": "skills/mysql.png"
   },
   {
-    "title": "Flutter/Dart",
-    "imageSrc": "skills/dart.png"
+    "title": "ProsgreSQL",
+    "imageSrc": "skills/pngwing.com.png"
   }
 ]

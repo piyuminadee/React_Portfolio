@@ -14,32 +14,42 @@ export const About = () => {
         />
         <ul className={styles.aboutItems}>
           <li className={styles.aboutItem}>
-            <img src={getImageUrl("about/cursorIcon.png")} alt="cursor icon" />
+            <img src={getImageUrl("about/cursorIcon.png")} alt="Frontend icon" />
             <div className={styles.aboutItemText}>
-              <h3>Frontend Developer</h3>
+              <h3>Full Stack Developer</h3> {/* Changed to Full Stack */}
               <p>
-                I’m a front-end developer with experience in building responsive
-                and optimized sites
+                Building responsive web applications with modern frameworks,
+                optimizing both client-side and server-side performance
               </p>
             </div>
           </li>
           <li className={styles.aboutItem}>
-            <img src={getImageUrl("about/serverIcon.png")} alt="server icon" />
+            <img src={getImageUrl("about/uiIcon.png")} alt="AI icon" /> {/* New icon */}
             <div className={styles.aboutItemText}>
-              <h3>Backend Developer</h3>
+              <h3>Machine Learning Engineer</h3> {/* New title */}
               <p>
-                I have experience developing fast and optimised back-end systems
-                and APIs
+                Developing intelligent solutions using Python, TensorFlow/PyTorch,
+                and deploying ML models for real-world applications
               </p>
             </div>
           </li>
           <li className={styles.aboutItem}>
-            <img src={getImageUrl("about/uiIcon.png")} alt="ui icon" />
+            <img src={getImageUrl("about/serverIcon.png")} alt="Backend icon" />
             <div className={styles.aboutItemText}>
-              <h3>UI Designer</h3>
+              <h3>Backend Architect</h3> {/* Enhanced title */}
               <p>
-                I have designed multiple landing pages and have created design
-                systems as well
+                Designing scalable REST APIs and microservices with focus on
+                security and high-performance computing
+              </p>
+            </div>
+          </li>
+          <li className={styles.aboutItem}>
+            <img src={getImageUrl("about/uiIcon.png")} alt="UI icon" />
+            <div className={styles.aboutItemText}>
+              <h3>UX Engineer</h3> {/* Enhanced title */}
+              <p>
+                Creating user-centered designs with prototyping tools and
+                maintaining design systems for consistency
               </p>
             </div>
           </li>

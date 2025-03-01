@@ -1,29 +1,22 @@
 [
-    {
-      "role": "Web Developer Intern",
-      "organisation": "Baharath",
-      "startDate": "July, 2024",
-      "endDate": "Present",
-      "experiences": ["build on portfolio", "Reduced load times by 50%"],
-      "imageSrc": "history/google.png"
-    },
+    
     {
       "role": "Web Maintainer",
       "organisation": "Rightmo",
       "startDate": "Aug, 2021",
       "endDate": "Aug, 2022",
       "experiences": ["Worked on Windows 11", "Designed the control panel"],
-      "imageSrc": "history/microsoft.png"
+      "imageSrc": "history/Rightmo.png"
     },
     {
-      "role": "SWE Intern",
-      "organisation": "Netflix",
-      "startDate": "Apr, 2020",
-      "endDate": "Jun, 2020",
+      "role": "Software Engineer Intern",
+      "organisation": "StackNet",
+      "startDate": "Aug, 2024",
+      "endDate": "present",
       "experiences": [
-        "Worked on component library",
+        "Worked on frontend backend",
         "Helped create UI components"
       ],
-      "imageSrc": "history/netflix.png"
+      "imageSrc": "history/stacknet.jpeg"
     }
   ]
