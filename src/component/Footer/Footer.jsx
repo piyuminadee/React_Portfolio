@@ -33,7 +33,7 @@ export const Footer = () => {
               </a>
               <a href="#" className={styles.socialLink}>
                 <img
-                  src={getImageUrl("Contact/twitterIcon.png")}
+                  src={getImageUrl("Contact/twitter.png")}
                   alt="Twitter icon"
                 />
                 <span>Twitter</span>

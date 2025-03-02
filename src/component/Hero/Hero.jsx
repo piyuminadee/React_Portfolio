@@ -10,7 +10,7 @@ export const Hero = () => {
     <section className={styles.container}>
         <div className={styles.content}>
         <h1 className={styles.title}>Hi, I'm Nadeesha</h1>
-            <p className={styles.description}>I am a java developer with no experiences. undergraduate University of Kelaniya</p>
+            <p className={styles.description}>Computer Science undergraduate at the University of Kelaniya, specializing in Data Science</p>
             <a className={styles.contactBtn} type='button' href='mailto:piyuminadeesha.22@mail.com'>Contact Me</a>
         </div>
         <img className={styles.heroImg} src={heroImgUrl}/>
