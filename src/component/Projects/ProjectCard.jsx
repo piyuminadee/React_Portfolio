@@ -1,11 +1,14 @@
 import React from "react";
+import { useState } from 'react';
 
 import styles from "./ProjectCard.module.css";
+import { VideoPlayer } from '../VideoPlayer/VideoPlayer';
+
 import { getImageUrl } from "../../utils";
 
-export const ProjectCard = ({
-  project: { title, imageSrc, description, skills, demo, source },
-}) => {
+export const ProjectCard = ({ project }) => {
+  const [showVideo, setShowVideo] = useState(false);
+  const { title, imageSrc, description, skills, video, source } = project;
   return (
     <div className={styles.container}>
       <img
@@ -25,12 +28,39 @@ export const ProjectCard = ({
         })}
       </ul>
       <div className={styles.links}>
-        <a href={demo} className={styles.link}>
-          Demo
+        {video ? (
+          <button 
+            className={styles.linkButton}
+            onClick={() => setShowVideo(true)}
+          >
+            Watch Demo
+          </button>
+        ) : (
+          <span className={styles.comingSoon}>Demo Coming Soon</span>
+        )}
+        
+        <a 
+          href={source} 
+          className={styles.link}
+          target="_blank" 
+          rel="noopener noreferrer"
+        >
+          View Code
         </a>
-        <a href={source} className={styles.link}>
-          Source
-        </a>
+
+        {showVideo && (
+        <div className={styles.videoModalOverlay}>
+          <div className={styles.videoModal}>
+            <VideoPlayer source={video} />
+            <button 
+              className={styles.closeButton}
+              onClick={() => setShowVideo(false)}
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
       </div>
     </div>
   );

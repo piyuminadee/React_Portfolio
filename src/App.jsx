@@ -4,8 +4,9 @@ import { Navbar } from './component/Navbar/Navbar'
 import { Hero } from './component/Hero/Hero'
 import { About } from './component/About/About'
 import { Experiences } from './component/Experiences/Experiences'
-import { Project } from './component/Projects/Project'
+import { Projects } from './component/Projects/Projects'
 import { Footer } from './component/Footer/Footer'
+import { Contact } from './component/Contact/Contact'
 // import { Projects } from './component/Projects/Projects'
 
 function App() {
@@ -15,7 +16,8 @@ function App() {
       <Hero />
       <About />
       <Experiences/>
-      <Project />
+      <Projects />
+      <Contact />
       <Footer />
     </div>
   )
