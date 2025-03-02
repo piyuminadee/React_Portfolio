@@ -29,8 +29,8 @@ export const Contact = () => {
             <div className={styles.details}>
               <h3>LinkedIn</h3>
               <a href="https://linkedin.com/in/piyumi-weerarathna-36ba26214" target="_blank" >
-                linkedin.com/in/yourprofile
-              </a>
+              piyumi-weerarathna
+               </a>
             </div>
           </div>
         </div>
