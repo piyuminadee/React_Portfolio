@@ -10,30 +10,30 @@ export const Footer = () => {
         <div className={styles.links}>
           <div className={styles.linkColumn}>
             <h3 className={styles.title}>Contact</h3>
-            <a href="mailto:your@email.com" className={styles.link}>
-              your@email.com
+            <a href="mailto:piyuminadeesha.22@gmail.com" className={styles.link}>
+              piyuminadeesha.22@gmail.com
             </a>
           </div>
           <div className={styles.linkColumn}>
             <h3 className={styles.title}>Social</h3>
             <div className={styles.socialLinks}>
-              <a href="#" className={styles.socialLink}>
+              <a href="https://github.com/piyuminadee" className={styles.socialLink}>
                 <img
-                  src={getImageUrl("Contact/githubIcon.png")}
+                  src={getImageUrl("contact/githubIcon.png")}
                   alt="GitHub icon"
                 />
                 <span>GitHub</span>
               </a>
               <a href="#" className={styles.socialLink}>
                 <img
-                  src={getImageUrl("Contact/linkedinIcon.png")}
+                  src={getImageUrl("contact/linkedinIcon.png")}
                   alt="LinkedIn icon"
                 />
                 <span>LinkedIn</span>
               </a>
-              <a href="#" className={styles.socialLink}>
+              <a href="https://x.com/piyuminadeesha3" className={styles.socialLink}>
                 <img
-                  src={getImageUrl("Contact/twitter.png")}
+                  src={getImageUrl("contact/twitter.png")}
                   alt="Twitter icon"
                 />
                 <span>Twitter</span>
