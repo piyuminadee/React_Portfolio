@@ -5,13 +5,14 @@ export default defineConfig({
   plugins: [react()],
   base: '/React_Portfolio/',
   build: {
+    
     outDir: 'dist',
-    assetsDir: 'assets',
+    assetsDir: 'assests',
     emptyOutDir: true,
     rollupOptions: {
       output: {
-        assetFileNames: 'assets/[name].[hash].[ext]',
-        entryFileNames: 'assets/[name].[hash].js',
+        assetFileNames: 'assests/[name].[hash].[ext]',
+        entryFileNames: 'assests/[name].[hash].js',
       }
     }
   }

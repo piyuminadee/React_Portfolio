@@ -14,7 +14,7 @@ export const Hero = () => {
                <hr></hr> For me, data isn’t just about patterns. it’s about creating solutions that push industries forward. <hr></hr>
                 </p>
                 <div className={styles.btnContainer}>
-                    <a className={styles.contactBtn} href='mailto:piyuminadeesha.22@mail.com'>Get in Touch</a>
+                    <a className={styles.contactBtn} href='mailto:piyuminadeesha.22@mail.com'>Get in</a>
                     <a 
                         className={`${styles.contactBtn} ${styles.downloadBtn}`} 
                         href="/assests/hero/PIYUMI WEERARATHNA.pdf" 
