@@ -1,0 +1,120 @@
+/* VolunteerExperience.module.css */
+.container {
+    padding: 4rem 2rem;
+    background: rgba(0,0,0,0.4);
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--color-text);
+    margin-bottom: 3rem;
+  }
+  
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+  }
+  
+  .textContent {
+    padding: 2rem;
+  }
+  
+  .projectTitle {
+    font-size: 1.8rem;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+  }
+  
+  .organization {
+    font-size: 1.2rem;
+    color: #636e72;
+    margin-bottom: 1.5rem;
+  }
+  
+  .description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--color-text);
+    margin-bottom: 2rem;
+  }
+  
+  .achievements {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  .awardBadge {
+    background: #0984e3;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 600;
+  }
+  
+  .duration {
+    color: #636e72;
+    font-size: 0.9rem;
+  }
+  
+  .photoContainer {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  }
+  
+  .projectPhoto {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .photoContainer:hover .projectPhoto {
+    transform: scale(1.03);
+  }
+  
+  .photoOverlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    padding: 2rem 1rem 1rem;
+    color: white;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .content {
+      grid-template-columns: 1fr;
+    }
+    
+    .projectTitle {
+      font-size: 1.5rem;
+    }
+    
+    .photoContainer {
+      order: -1;
+    }
+    
+    .projectPhoto {
+      height: 300px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .title {
+      font-size: 2rem;
+    }
+    
+    .awardBadge {
+      font-size: 0.9rem;
+    }
+  }
