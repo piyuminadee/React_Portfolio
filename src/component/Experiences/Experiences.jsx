@@ -5,40 +5,55 @@ import skills from "../../data/skills.json";
 import history from "../../data/history.json";
 
 export const Experiences = () => {
-  const skillsElement = skills.map((skill, id) => {
-    return (
-      <div key={id} className={styles.skill}>
-        <div className={styles.skillImageContainer}>
-          <img src={getImageUrl(skill.imageSrc)} alt={skill.title} />
-        </div>
-        <p>{skill.title}</p>
-      </div>
-    );
-  });
+  const skillsElement = skills.map((skill, id) => (
+    <div key={id} className={styles.skillItem}>
+      <img 
+        src={getImageUrl(skill.imageSrc)} 
+        alt={skill.title}
+        className={styles.skillIcon}
+      />
+      <span>{skill.title}</span>
+    </div>
+  ));
 
-  const historyElement = history.map((historyItem, id) => {
-    return (
-      <li key={id} className={styles.historyItem}>
-        <img src={getImageUrl(historyItem.imageSrc)} alt={`${historyItem.organisation} Logo`}/>
-        <div className={styles.historyItemDetails}>
-        <h3>{`${historyItem.role}, ${historyItem.organisation}`}</h3>
-        <p>{`${historyItem.startDate}, ${historyItem.endDate}`}</p>
-        <ul>
-          {historyItem.experiences.map((experience, id) => {
-            return <li key={id}>{experience}</li>;
-          })}
-        </ul>
+  const historyElement = history.map((historyItem, id) => (
+    <div key={id} className={styles.experienceCard}>
+    <img 
+        src={getImageUrl(historyItem.imageSrc)} 
+        alt={historyItem.title}
+        className={styles.skillIcon}
+      />
+      <div className={styles.experienceHeader}>
+        <h3>{historyItem.role}</h3>
+        <p className={styles.company}>{historyItem.organisation}</p>
+        <div className={styles.duration}>
+          {historyItem.startDate} - {historyItem.endDate}
         </div>
-      </li>
-    );
-  });
+      </div>
+      <ul className={styles.responsibilities}>
+        {historyItem.experiences.map((experience, idx) => (
+          <li key={idx}>{experience}</li>
+        ))}
+      </ul>
+    </div>
+  ));
 
   return (
     <section className={styles.container} id="experience">
-      <h2 className={styles.title}>Experience</h2>
-      <div className={styles.content}>
-        <div className={styles.skills}>{skillsElement}</div>
-        <ul className={styles.history}>{historyElement}</ul>
+      <h2 className={styles.sectionTitle}>EXPERIENCE</h2>
+      
+      <div className={styles.skillsSection}>
+        <h3 className={styles.subtitle}>Technical Skills</h3>
+        <div className={styles.skillsGrid}>
+          {skillsElement}
+        </div>
+      </div>
+
+      <div className={styles.experienceSection}>
+        <h3 className={styles.subtitle}>Professional Experience</h3>
+        <div className={styles.experienceList}>
+          {historyElement}
+        </div>
       </div>
     </section>
   );

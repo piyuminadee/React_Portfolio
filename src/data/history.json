@@ -4,18 +4,20 @@
       "role": "Web Maintainer",
       "organisation": "Rightmo",
       "startDate": "Aug, 2021",
-      "endDate": "Aug, 2022",
-      "experiences": ["Worked on Windows 11", "Designed the control panel"],
+      "endDate": "Feb, 2022",
+        
+      "experiences": ["Maintained and updated websites including maruads.lk, riahub.lk, songhub.lk and GovDoc to ensure optimal performance.", "Managed content updates, feature enhancements to improve user experience."],
       "imageSrc": "history/Rightmo.png"
     },
     {
       "role": "Software Engineer Intern",
       "organisation": "StackNet",
       "startDate": "Aug, 2024",
-      "endDate": "present",
+      "endDate": "Feb, 2025",
       "experiences": [
-        "Worked on frontend backend",
-        "Helped create UI components"
+        " Developed a restaurant web application using the MERNstack(MongoDB, Express.js, React.js, Node.js).",
+        "Contributed to the development of a POS system usng ASP.NET, improving transaction efficiency."
+        
       ],
       "imageSrc": "history/stacknet.jpeg"
     }

@@ -46,5 +46,21 @@
   {
     "title": "ProsgreSQL",
     "imageSrc": "skills/pngwing.com.png"
+  },
+  {
+    "title": "Pandas",
+    "imageSrc": "skills/pandas.png"
+  },
+  {
+    "title": "NumPy",
+    "imageSrc": "skills/numpy.png"
+  },
+  {
+    "title": "Scikit-learn",
+    "imageSrc": "skills/scikit.png"
+  },
+  {
+    "title": "TensorFlow",
+    "imageSrc": "skills/tensorflow.png"
   }
 ]

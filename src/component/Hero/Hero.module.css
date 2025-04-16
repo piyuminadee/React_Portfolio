@@ -68,13 +68,32 @@
 }
 
 .heroImg {
-    width: 45%;
+    width: 30%;
     max-width: 500px;
     z-index: 1;
     animation-name: floating;
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
+    border-radius: 50%;
+    border: 8px solid #303ac9; /* Adjust color (#fff = white) */
+    box-sizing: border-box;
+    
+}
+
+.btnContainer {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.downloadBtn {
+    background-color: var(--color-primary);
+    margin-left: 1rem; /* Space between buttons */
+}
+
+.downloadBtn:hover {
+    background-color: #45a049; /* Darker green on hover */
 }
 
 /* Mobile Responsive Styles */

@@ -20,7 +20,7 @@ export const Navbar = () => {
 
   return (
     <nav className={styles.navbar}>
-      <a href='/' className={styles.title} title="Homepage">Portfolio</a>  
+      <a href='/' className={styles.title} title="Homepage"></a>  
     
       <div className={styles.menu}>
 
