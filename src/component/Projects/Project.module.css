@@ -1,26 +1,58 @@
-@import "../../vars.css";
-
+/* Project.module.css */
 .container {
-  margin-top: 76px;
-  color: var(--color-text);
-  margin-left: 10%;
-  margin-right: 10%;
+  padding: 6rem 2rem;
+  background: linear-gradient(45deg, rgba(36, 44, 82, 0.6) 0%, rgba(12, 12, 12, 0.6) 100%);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
 }
 
 .title {
-  font-size: 35px;
-  font-weight: 700;
-  letter-spacing: 1.75px;
-  text-transform: uppercase;
+  font-size: 2.5rem;
+  color: #f6f6f7;
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
 }
 
-.projects {
-  margin-top: 37px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-  width: 100%;
+.title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: #0984e3;
+}
+
+.subtitle {
+  color: #636e72;
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 4rem 1rem;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+  }
+  
+  .projectsGrid {
+    gap: 2rem;
+  }
 }

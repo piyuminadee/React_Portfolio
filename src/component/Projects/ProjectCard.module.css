@@ -1,80 +1,141 @@
-@import "../../vars.css";
-
+/* ProjectCard.module.css */
 .container {
+  perspective: 1000px;
+}
+
+.card {
+  background: rgb(165, 180, 223);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  border-radius: 10px;
-  background: linear-gradient(180deg, #576cbc 0%, #132a53 100%);
-  box-shadow: 0 16px 14px 0 #04152d;
-  padding: 18px 24px;
-  max-width: 345px;
+}
+
+.card:hover {
+  transform: translateY(-10px) rotateX(2deg) rotateY(2deg);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
 }
 
 .imageContainer {
-  width: 100%;
-  height: 200px; /* Adjust this value as needed */
-  overflow: hidden;
-  border-radius: 0.5rem; /* Optional: match your design */
   position: relative;
+  height: 220px;
+  overflow: hidden;
 }
 
-/* Update image styling */
 .image {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* This ensures images cover the container without distortion */
-  object-position: center; /* Focus on the center of the image */
-  display: block;
+  object-fit: cover;
+  transition: transform 0.3s ease;
 }
 
-.image {
-  margin-bottom: 26px;
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.imageContainer:hover .overlay {
+  opacity: 1;
+}
+
+.playButton {
+  background: rgba(255,255,255,0.9);
+  border: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: 600;
+  color: #0984e3;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.playButton:hover {
+  background: rgba(12, 12, 12, 0.6);
+  transform: scale(1.05);
+}
+
+.comingSoon {
+  color: white;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.content {
+  padding: 2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .title {
-  font-size: 25px;
-  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #2d3436;
 }
 
 .description {
-  margin-top: 6px;
-  font-size: 25px;
-  font-weight: 400;
+  color: #636e72;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  flex: 1;
 }
 
 .skills {
-  width: 100%;
-  margin-top: 14px;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  gap: 6px;
-  list-style: none;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .skill {
-  font-size: 25px;
-  font-weight: 400;
-  border-radius: 100px;
-  background: var(--color-dark);
-  padding: 2px 22px;
+  background: #e3f2fd;
+  color: #0984e3;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
 }
 
 .links {
-  width: 100%;
-  margin-top: 26px;
+  margin-top: auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.link {
-  text-decoration: none;
-  color: var(--color-text);
-  font-size: 30px;
+.sourceLink {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #0984e3;
   font-weight: 600;
-  border-radius: 100px;
-  background: var(--color-primary);
-  padding: 1px 22px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.sourceLink:hover {
+  color: #0873c4;
+}
+
+.linkIcon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
 
 /* Video Modal Styles */
@@ -84,55 +145,55 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0,0,0,0.9);
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   z-index: 1000;
 }
 
 .videoModal {
   position: relative;
-  width: 80%;
+  width: 90%;
   max-width: 800px;
-  background: #1a1a1a;
-  border-radius: 15px;
-  padding: 20px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  background: black;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .closeButton {
   position: absolute;
-  top: -15px;
-  right: -15px;
-  background: #ff4444;
+  top: 15px;
+  right: 15px;
+  background: rgba(255,255,255,0.1);
   border: none;
+  color: white;
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  font-size: 1.5rem;
   cursor: pointer;
-  font-size: 1.2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
+  transition: background 0.3s ease;
 }
 
 .closeButton:hover {
-  background: #ff0000;
+  background: rgba(255,255,255,0.2);
 }
 
-/* Existing styles */
-.linkButton {
-  background: var(--color-primary);
-  border: none;
-  padding: 8px 20px;
-  border-radius: 20px;
-  cursor: pointer;
-  transition: transform 0.3s;
-  color: white;
-}
-
-.linkButton:hover {
-  transform: scale(1.05);
+@media (max-width: 768px) {
+  .imageContainer {
+    height: 180px;
+  }
+  
+  .content {
+    padding: 1.5rem;
+  }
+  
+  .title {
+    font-size: 1.3rem;
+  }
+  
+  .skill {
+    font-size: 0.8rem;
+  }
 }

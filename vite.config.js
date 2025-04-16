@@ -10,6 +10,7 @@ export default defineConfig({
     emptyOutDir: true
   },
   plugins: [react()],
+  base:'/React_Portfolio/',
   css: {
     modules: {
       localsConvention: "camelCase",
