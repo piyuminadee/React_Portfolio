@@ -7,6 +7,7 @@ import { getImageUrl } from "../../utils";
 export const ProjectCard = ({ project }) => {
   const [showVideo, setShowVideo] = useState(false);
   const { title, imageSrc, description, skills, video, source } = project;
+  const videoSource = `${import.meta.env.BASE_URL}${video}`;
 
   return (
     <div className={styles.container}>
@@ -62,7 +63,7 @@ export const ProjectCard = ({ project }) => {
       {showVideo && (
         <div className={styles.videoModalOverlay}>
           <div className={styles.videoModal}>
-            <VideoPlayer source={video} />
+            <VideoPlayer source={videoSource} />
             <button 
               className={styles.closeButton}
               onClick={() => setShowVideo(false)}

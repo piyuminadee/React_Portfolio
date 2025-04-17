@@ -4,7 +4,7 @@
       "imageSrc": "projects/movieML.png",
       "description": "This project is content-based Movie Recommender System. This system suggests movies based on user preferences using cosine similarity and a preprocessed dataset.",
       "skills": ["Python", "Streamlit", "ML", "NLP"],
-      "video": "/projects/videos/demo.mp4",
+      "video": "projects/videos/demo.mp4",
       "source": "https://github.com/piyuminadee/movie-recommended-system.git"
     },
     {
@@ -12,7 +12,7 @@
       "imageSrc": "projects/project.png",
       "description": "This project is a full-stack web application integrating the Spotify API for real-time music playback. Users can create and join rooms to control music collaboratively.",
       "skills": ["React", "Django", "SQLite"],
-      "video": "/projects/videos/demo.mp4",
+      "video": "projects/videos/demo.mp4",
       "source": "https://github.com/piyuminadee/Colloberative-Music-Play-Django-React.git"
     },
     {
@@ -20,7 +20,7 @@
       "imageSrc": "projects/studentper.png",
       "description": "This is an End to End Production Grade Data Science Project. student's performance is affected by other variables such as Gender, Ethnicity etc. Based on these features will predict the students' performance.",
       "skills": ["ML", "Flask","EDA"],
-      "video": "/projects/videos/student.mp4",
+      "video": "projects/videos/student.mp4",
       "source": "https://github.com/piyuminadee/Student-Exam-Performance-Predictor.git"
     },
     {
@@ -28,7 +28,7 @@
       "imageSrc": "projects/project.png",
       "description": "This project is a POS system that forcast future sales and best selling items. ",
       "skills": ["ASP.NET", "SSMS","ML.NET"],
-      "video": "/projects/videos/POS.mp4",
+      "video": "projects/videos/POS.mp4",
       "source": "https://github.com/piyuminadee/restaurant-pos-mvc-prediction.git"
     }
     ,
@@ -37,7 +37,7 @@
       "imageSrc": "projects/project.png",
       "description": "This project is a movie review application that will feature a separation of concerns between the client code and the server code. ",
       "skills": ["React", "Spring","MongoDB", "Tailwind"],
-      "video": "/projects/videos/demo.mp4",
+      "video": "projects/videos/demo.mp4",
       "source": "https://github.com/piyuminadee/Movie-Reviews-Application-with-Springboot-MongoDB.git"
     }
     ,
@@ -46,7 +46,7 @@
       "imageSrc": "projects/project.png",
       "description": "This project is a movie review application that will feature a separation of concerns between the client code and the server code. ",
       "skills": ["Python", "Tensorflow","Keras", "Fast API"],
-      "video": "/projects/videos/demo.mp4",
+      "video": "projects/videos/demo.mp4",
       "source": "https://github.com/piyuminadee/Movie-Reviews-Application-with-Springboot-MongoDB.git"
     }
   ]
