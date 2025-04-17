@@ -16,7 +16,9 @@
       "endDate": "Feb, 2025",
       "experiences": [
         " Developed a restaurant web application using the (MongoDB, Express.js, React.js, Node.js).",
-        "Contributed to the development of a POS system usng ASP.NET, improving transaction efficiency."
+        "Contributed to the development of a POS system usng ASP.NET, improving transaction efficiency.",
+        "Implemented sales prediction model using ML.NET,enhancing business decision making through data driven insights.",
+        "Collaborated with a team in an Agile environment, participating in code reviews and feature development."
         
       ],
       "imageSrc": "history/stacknet.jpeg"

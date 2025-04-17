@@ -17,7 +17,7 @@ export const Footer = () => {
             <img src={getImageUrl("contact", "git.png")} alt="GitHub" />
           </a>
           <a 
-            href="#" 
+            href="https://www.linkedin.com/in/piyumi-weerarathna-36ba26214/" 
             className={styles.socialLink}
             target="_blank" 
             rel="noopener noreferrer"

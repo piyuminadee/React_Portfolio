@@ -24,13 +24,14 @@
     text-transform: uppercase;
     font-size: 2.5rem;
     margin-bottom: 3rem;
-    color: #fff;
+    
   
 }
 
 .aboutImage{
     width: 35%;
     border-radius: 50%;
+    border: 8px solid #303ac9;
 }
 
 .aboutItems{

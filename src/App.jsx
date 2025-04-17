@@ -8,6 +8,7 @@ import { Projects } from './component/Projects/Projects'
 import { Footer } from './component/Footer/Footer'
 import { Contact } from './component/Contact/Contact'
 import { VolunteerExperience } from './component/VolunteerExperience/VolunteerExperience'
+import { Publications } from './component/Publications/Publications'
 // import { Projects } from './component/Projects/Projects'
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
        <Experiences/>
       <Projects />
       <VolunteerExperience />
+      <Publications />
       <Contact />
       <Footer /> 
     </div>
