@@ -2,150 +2,135 @@
 @import "../../vars.css";
 
 .container {
-  position: relative;
   background-color: rgba(12, 12, 12, 0.6);
   border-radius: 15px;
-  padding: 73px;
-  margin-top: 129px;
+  padding: clamp(2rem, 5vw, 4.5rem);
+  margin: 6rem auto 0;
+  width: min(90%, 1200px);
+  position: relative;
   z-index: 1;
-  margin-left: 10%;
-  margin-right: 10%;
 }
 
 .title {
   color: var(--color-text);
-  font-size: 35px;
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
   font-weight: 700;
-  letter-spacing: 1.75px;
+  text-align: center;
+  margin-bottom: 2rem;
   text-transform: uppercase;
+  letter-spacing: 1.2px;
 }
 
 .content {
-  display: flex;
-  gap: 50px;
-  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  align-items: start;
 }
 
 .contactInfo {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+  display: grid;
+  gap: 1.5rem;
 }
 
 .contactItem {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr;
   align-items: center;
-  gap: 20px;
-  padding: 20px;
-  background-image: linear-gradient(
-    90deg,
-    rgba(165, 215, 232, 0.42) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  background-size: 0 100%;
-  background-repeat: no-repeat;
-  transition: 0.4s;
-  border-radius: 15px;
+  gap: 1.2rem;
+  padding: 1.2rem;
+  background: rgba(165, 215, 232, 0.1);
+  border-radius: 12px;
+  transition: transform 0.3s ease, background 0.3s ease;
 }
 
 .contactItem:hover {
-  background-size: 100% 100%;
+  transform: translateY(-3px);
+  background: rgba(165, 215, 232, 0.15);
 }
 
 .icon {
-  width: 50px;
-  height: 50px;
+  width: clamp(40px, 5vw, 50px);
+  height: clamp(40px, 5vw, 50px);
 }
 
 .details h3 {
-  font-size: 1.5rem;
+  font-size: clamp(1.1rem, 2vw, 1.3rem);
   color: var(--color-primary);
-  margin-bottom: 5px;
+  margin-bottom: 0.5rem;
 }
 
 .details a {
   color: var(--color-text);
-  text-decoration: none;
-  font-size: 1.1rem;
-  transition: 0.3s;
-}
-
-.details a:hover {
-  color: var(--color-primary);
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  word-break: break-all;
 }
 
 .form {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
+  display: grid;
+  gap: 1.5rem;
 }
 
 .formGroup {
-  display: flex;
-  gap: 25px;
+  display: grid;
+  gap: 1.2rem;
 }
 
 .input, .textarea {
-  flex: 1;
-  background: rgba(255, 255, 255, 0.1);
-  border: 2px solid var(--color-primary);
-  border-radius: 10px;
-  padding: 15px;
-  color: var(--color-text);
+  width: 100%;
+  padding: 0.8rem 1rem;
   font-size: 1rem;
-  transition: 0.3s;
-}
-
-.input:focus, .textarea:focus {
-  outline: none;
-  border-color: var(--color-secondary);
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid var(--color-primary);
+  border-radius: 8px;
+  color: var(--color-text);
+  transition: border-color 0.3s ease;
 }
 
 .textarea {
+  min-height: 120px;
   resize: vertical;
 }
 
 .submitBtn {
-  align-self: flex-start;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
   background: var(--color-primary);
-  border: none;
-  border-radius: 10px;
-  padding: 15px 40px;
-  color: var(--color-text);
-  font-size: 1.1rem;
-  cursor: pointer;
-  transition: 0.3s;
+  border-radius: 8px;
+  transition: all 0.3s ease;
 }
 
-.submitBtn:hover {
-  transform: scale(1.05);
-  background: var(--color-secondary);
-}
-
-@media screen and (max-width: 830px) {
-  .container {
-    padding: 30px;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-
+@media (max-width: 768px) {
   .content {
-    flex-direction: column;
+    gap: 2rem;
   }
-
-  .formGroup {
-    flex-direction: column;
-    gap: 15px;
-  }
-
+  
   .contactItem {
-    padding: 15px;
+    grid-template-columns: 1fr;
+    text-align: center;
   }
-
+  
   .icon {
-    width: 40px;
-    height: 40px;
+    margin: 0 auto;
+  }
+  
+  .formGroup {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    margin-top: 4rem;
+    width: 95%;
+  }
+  
+  .details a {
+    font-size: 0.85rem;
+  }
+  
+  .submitBtn {
+    padding: 0.8rem;
   }
 }

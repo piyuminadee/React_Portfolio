@@ -27,7 +27,7 @@ export const VolunteerExperience = () => {
 
         <div className={styles.photoContainer}>
           <img 
-            src={getImageUrl("volunteer/grp.jpg")}
+            src={getImageUrl("volunteer","grp.jpg")}
             alt="Cybershield Project Team"
             className={styles.projectPhoto}
           />

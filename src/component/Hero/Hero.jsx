@@ -3,7 +3,7 @@ import styles from "./Hero.module.css";
 import {getImageUrl} from '../../utils';
 
 export const Hero = () => {
-    const heroImgUrl = getImageUrl("hero/piyumi.jpg");
+    const heroImgUrl = getImageUrl("hero","piyumi.jpg");
 
     return (
         <section className={styles.container}>
@@ -14,7 +14,7 @@ export const Hero = () => {
                <hr></hr> For me, data isn’t just about patterns. it’s about creating solutions that push industries forward. <hr></hr>
                 </p>
                 <div className={styles.btnContainer}>
-                    <a className={styles.contactBtn} href='mailto:piyuminadeesha.22@mail.com'>Get in</a>
+                    <a className={styles.contactBtn} href='mailto:piyuminadeesha.22@mail.com'>Get in Touch</a>
                     <a 
                         className={`${styles.contactBtn} ${styles.downloadBtn}`} 
                         href="/assests/hero/PIYUMI WEERARATHNA.pdf" 

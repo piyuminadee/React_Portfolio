@@ -14,7 +14,7 @@ export const Footer = () => {
             target="_blank" 
             rel="noopener noreferrer"
           >
-            <img src={getImageUrl("contact/githubIcon.png")} alt="GitHub" />
+            <img src={getImageUrl("contact", "githubIcon.png")} alt="GitHub" />
           </a>
           <a 
             href="#" 
@@ -22,7 +22,7 @@ export const Footer = () => {
             target="_blank" 
             rel="noopener noreferrer"
           >
-            <img src={getImageUrl("contact/linkedinIcon.png")} alt="LinkedIn" />
+            <img src={getImageUrl("contact", "linkedinIcon.png")} alt="LinkedIn" />
           </a>
           <a 
             href="https://x.com/piyuminadeesha3" 
@@ -30,7 +30,7 @@ export const Footer = () => {
             target="_blank" 
             rel="noopener noreferrer"
           >
-            <img src={getImageUrl("contact/twitter.png")} alt="Twitter" />
+            <img src={getImageUrl("contact", "twitter.png")} alt="Twitter" />
           </a>
         </div>
         

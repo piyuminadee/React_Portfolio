@@ -9,12 +9,12 @@ export const About = () => {
       <div className={styles.content}>
         <img
           className={styles.aboutImage}
-          src={getImageUrl("about/rrr4.jpg")}
+          src={getImageUrl("about", "rrr4.jpg")}
           alt="Me sitting with a laptop"
         />
         <ul className={styles.aboutItems}>
           <li className={styles.aboutItem}>
-            <img src={getImageUrl("about/cursorIcon.png")} alt="Frontend icon" />
+            <img src={getImageUrl("about","cursorIcon.png")} alt="Frontend icon" />
             <div className={styles.aboutItemText}>
               <h3>Full Stack Developer</h3> {/* Changed to Full Stack */}
               <p>
@@ -24,7 +24,7 @@ export const About = () => {
             </div>
           </li>
           <li className={styles.aboutItem}>
-            <img src={getImageUrl("about/uiIcon.png")} alt="AI icon" /> {/* New icon */}
+            <img src={getImageUrl("about", "uiIcon.png")} alt="AI icon" /> {/* New icon */}
             <div className={styles.aboutItemText}>
               <h3>Machine Learning Engineer</h3> {/* New title */}
               <p>
@@ -34,7 +34,7 @@ export const About = () => {
             </div>
           </li>
           <li className={styles.aboutItem}>
-            <img src={getImageUrl("about/serverIcon.png")} alt="Backend icon" />
+            <img src={getImageUrl("about", "serverIcon.png")} alt="Backend icon" />
             <div className={styles.aboutItemText}>
               <h3>Backend Architect</h3> {/* Enhanced title */}
               <p>
@@ -44,7 +44,7 @@ export const About = () => {
             </div>
           </li>
           <li className={styles.aboutItem}>
-            <img src={getImageUrl("about/uiIcon.png")} alt="UI icon" />
+            <img src={getImageUrl("about", "uiIcon.png")} alt="UI icon" />
             <div className={styles.aboutItemText}>
               <h3>UX Engineer</h3> {/* Enhanced title */}
               <p>

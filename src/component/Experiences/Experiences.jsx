@@ -8,7 +8,8 @@ export const Experiences = () => {
   const skillsElement = skills.map((skill, id) => (
     <div key={id} className={styles.skillItem}>
       <img 
-        src={getImageUrl(skill.imageSrc)} 
+        src={getImageUrl(skill.imageSrc.split('/')[0],
+                         skill.imageSrc.split('/')[1]   )} 
         alt={skill.title}
         className={styles.skillIcon}
       />
@@ -19,7 +20,8 @@ export const Experiences = () => {
   const historyElement = history.map((historyItem, id) => (
     <div key={id} className={styles.experienceCard}>
     <img 
-        src={getImageUrl(historyItem.imageSrc)} 
+        src={getImageUrl(historyItem.imageSrc.split('/')[0],
+          historyItem.imageSrc.split('/')[1])} 
         alt={historyItem.title}
         className={styles.skillIcon}
       />

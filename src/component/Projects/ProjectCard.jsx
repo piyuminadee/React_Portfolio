@@ -13,7 +13,7 @@ export const ProjectCard = ({ project }) => {
       <div className={styles.card}>
         <div className={styles.imageContainer}>
           <img
-            src={getImageUrl(imageSrc)}
+            src={getImageUrl(imageSrc.split('/')[0],imageSrc.split('/')[1])}
             alt={`Image of ${title}`}
             className={styles.image}
           />
