@@ -6,7 +6,7 @@ import { getImageUrl } from "../../utils";
 export const VolunteerExperience = () => {
   return (
     <section className={styles.container} id="volunteer">
-      <h2 className={styles.title}>Volunteer Experience</h2>
+      <h2 className={styles.title}>VOLUNTEER EXPERIENCE</h2>
       
       <div className={styles.content}>
         <div className={styles.textContent}>

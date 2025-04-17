@@ -13,7 +13,7 @@
       "description": "This project is a full-stack web application integrating the Spotify API for real-time music playback. Users can create and join rooms to control music collaboratively.",
       "skills": ["React", "Django", "SQLite"],
       "video": "/projects/videos/demo.mp4",
-      "source": "https://www.github.com"
+      "source": "https://github.com/piyuminadee/Colloberative-Music-Play-Django-React.git"
     },
     {
       "title": "Student Exam Performance Predictor",
@@ -24,10 +24,28 @@
       "source": "https://github.com/piyuminadee/Student-Exam-Performance-Predictor.git"
     },
     {
+      "title": "POS System with Sales Prediction",
+      "imageSrc": "projects/project.png",
+      "description": "This project is a POS system that forcast future sales and best selling items. ",
+      "skills": ["ASP.NET", "SSMS","ML.NET"],
+      "video": "/projects/videos/POS.mp4",
+      "source": "https://github.com/piyuminadee/restaurant-pos-mvc-prediction.git"
+    }
+    ,
+    {
       "title": "Movie-Reviews-Application",
       "imageSrc": "projects/project.png",
       "description": "This project is a movie review application that will feature a separation of concerns between the client code and the server code. ",
       "skills": ["React", "Spring","MongoDB", "Tailwind"],
+      "video": "/projects/videos/demo.mp4",
+      "source": "https://github.com/piyuminadee/Movie-Reviews-Application-with-Springboot-MongoDB.git"
+    }
+    ,
+    {
+      "title": "Potato Desease Classification",
+      "imageSrc": "projects/project.png",
+      "description": "This project is a movie review application that will feature a separation of concerns between the client code and the server code. ",
+      "skills": ["Python", "Tensorflow","Keras", "Fast API"],
       "video": "/projects/videos/demo.mp4",
       "source": "https://github.com/piyuminadee/Movie-Reviews-Application-with-Springboot-MongoDB.git"
     }

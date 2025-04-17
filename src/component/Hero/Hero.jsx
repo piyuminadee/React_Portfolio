@@ -4,6 +4,7 @@ import {getImageUrl} from '../../utils';
 
 export const Hero = () => {
     const heroImgUrl = getImageUrl("hero","piyumi.jpg");
+    const resumeUrl = getImageUrl("hero", "PIYUMI-WEERARATHNA.pdf");
 
     return (
         <section className={styles.container}>
@@ -17,7 +18,7 @@ export const Hero = () => {
                     <a className={styles.contactBtn} href='mailto:piyuminadeesha.22@mail.com'>Get in Touch</a>
                     <a 
                         className={`${styles.contactBtn} ${styles.downloadBtn}`} 
-                        href="/assests/hero/PIYUMI WEERARATHNA.pdf" 
+                        href={resumeUrl}
                         download
                     >
                         Download Resume

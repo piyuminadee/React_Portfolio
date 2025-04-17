@@ -111,14 +111,11 @@
     }
 
     .title {
-        font-size: 2.5rem; /* 40px */
-        margin-bottom: 1rem;
-        background: linear-gradient(
-            90deg,
-            rgba(255,255,255,1) 30%,
-            rgba(255,255,255,0) 100%
-        );
+        line-height: 1.1;
+        margin-bottom: 1.5rem;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
     }
+    
 
     .description {
         font-size: 1.1rem; /* 18px */
