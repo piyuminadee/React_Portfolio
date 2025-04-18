@@ -11,7 +11,7 @@ export const Publications = () => {
     research: {
       title: "A Review of Natural Language Processing Tools for Sinhala Language",
       authors: "Piyumi Weerarathna, et al.",
-      conference: "International Conference on Machine Learning (ICML-2023)",
+      conference: " ",
       summary: "Comprehensive analysis of existing NLP tools and resources for Sinhala language processing, identifying key challenges and proposing future directions.",
       links: {
         researchGate: "https://www.researchgate.net/publication/388281269_A_Review_of_Natural_Language_Processing_Tools_for_Sinhala_Language",
@@ -94,7 +94,7 @@ export const Publications = () => {
               />
               <div className={styles.articleMeta}>
                 <span className={styles.publishDate}>{article.date}</span>
-                <span className={styles.readTime}>{article.readTime}</span>
+                <span >{article.readTime}</span>
               </div>
             </div>
             <h4 className={styles.articleTitle}>{article.title}</h4>

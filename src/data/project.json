@@ -1,7 +1,7 @@
 [
     {
       "title": "Movie Recommended System",
-      "imageSrc": "projects/movieML.png",
+      "imageSrc": "projects/m.png",
       "description": "This project is content-based Movie Recommender System. This system suggests movies based on user preferences using cosine similarity and a preprocessed dataset.",
       "skills": ["Python", "Streamlit", "ML", "NLP"],
       "video": "projects/videos/demo.mp4",
@@ -17,7 +17,7 @@
     },
     {
       "title": "Student Exam Performance Predictor",
-      "imageSrc": "projects/studentper.png",
+      "imageSrc": "projects/stu.png",
       "description": "This is an End to End Production Grade Data Science Project. student's performance is affected by other variables such as Gender, Ethnicity etc. Based on these features will predict the students' performance.",
       "skills": ["ML", "Flask","EDA"],
       "video": "projects/videos/student.mp4",
@@ -25,7 +25,7 @@
     },
     {
       "title": "POS System with Sales Prediction",
-      "imageSrc": "projects/project.png",
+      "imageSrc": "projects/pos.png",
       "description": "This project is a POS system that forcast future sales and best selling items. ",
       "skills": ["ASP.NET", "SSMS","ML.NET"],
       "video": "projects/videos/POS.mp4",
@@ -34,7 +34,7 @@
     ,
     {
       "title": "Movie-Reviews-Application",
-      "imageSrc": "projects/project.png",
+      "imageSrc": "projects/mov.png",
       "description": "This project is a movie review application that will feature a separation of concerns between the client code and the server code. ",
       "skills": ["React", "Spring","MongoDB", "Tailwind"],
       "video": "projects/videos/demo.mp4",
@@ -43,10 +43,10 @@
     ,
     {
       "title": "Potato Desease Classification",
-      "imageSrc": "projects/project.png",
-      "description": "This project is a movie review application that will feature a separation of concerns between the client code and the server code. ",
+      "imageSrc": "projects/potato.png",
+      "description": "Developed a deep learning model using TensorFlow/Keras with 98.5% validation accuracy, implementing a CNN architecture to classify potato leaf images into three categories: Early Blight, Late Blight, and Healthy.",
       "skills": ["Python", "Tensorflow","Keras", "Fast API"],
       "video": "projects/videos/demo.mp4",
-      "source": "https://github.com/piyuminadee/Movie-Reviews-Application-with-Springboot-MongoDB.git"
+      "source": "https://github.com/piyuminadee/Potato-Disease-Classification.git"
     }
   ]
