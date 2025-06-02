@@ -8,7 +8,7 @@ export const Publications = () => {
     {
       title: "A Review of Natural Language Processing Tools for Sinhala Language",
       authors: "Piyumi Weerarathna, et al.",
-      conference: "International Conference on Computational Linguistics, 2023",
+      
       summary: "Comprehensive analysis of existing NLP tools and resources for Sinhala language processing, identifying key challenges and proposing future directions.",
       links: {
         researchGate: "https://www.researchgate.net/publication/388281269_A_Review_of_Natural_Language_Processing_Tools_for_Sinhala_Language",
