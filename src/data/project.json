@@ -45,8 +45,8 @@
       "title": "Potato Desease Classification",
       "imageSrc": "projects/potato.png",
       "description": "Developed a deep learning model using TensorFlow/Keras with 98.5% validation accuracy, implementing a CNN architecture to classify potato leaf images into three categories: Early Blight, Late Blight, and Healthy.",
-      "skills": ["Python", "Tensorflow","Keras", "Fast API"],
-      "video": "projects/videos/demo.mp4",
+      "skills": ["Python", "Tensorflow","Keras", "Fast API", "Docker"],
+      "video": "projects/videos/potato.mp4",
       "source": "https://github.com/piyuminadee/Potato-Disease-Classification.git"
     }
   ]
